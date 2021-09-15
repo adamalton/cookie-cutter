@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Cookie Cutter",
+  "version": "1.0",
+  "description": "Allows you to easily copy your cookie from any website to the clipboard.",
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "assets/icon_16.png",
+    "48": "assets/icon_48.png",
+    "128": "assets/icon_128.png"
+  },
+  "permissions": [
+    "cookies",
+    "activeTab"
+  ]
+}

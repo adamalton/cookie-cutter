@@ -1,0 +1,39 @@
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 0.5em 3em 3em;
+	/*text-align: center;*/
+	width: 40em;
+}
+
+/*.main {
+	margin: auto;
+	text-align: left;
+}*/
+
+.hidden {
+	display: none;
+}
+
+
+.status p{
+	margin-top: 1em;
+	padding: 2em;
+}
+.status-success {
+	border: 2px solid #76e5b1;
+}
+.status-failure {
+	border: 2px solid #d93025;
+}
+
+button {
+	background-color: #106bb7;
+	border-color:  transparent;
+	border-radius: 0.375em;
+	color:  white;
+	cursor: pointer;
+	justify-content: center;
+	padding:  0.5em 1em;
+	text-align: center;
+	white-space: nowrap;
+}
