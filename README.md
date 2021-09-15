@@ -24,8 +24,8 @@ https://chrome.google.com/webstore/detail/cookie-cutter/hggjepdbfegkbiddfmhancdg
 
 If you want to load this extension in development mode:
 
-1. Download this repository.
+1. Download [this repository as a zip file](https://github.com/adamalton/cookie-cutter/archive/refs/heads/main.zip) and un-zip it.
 2. In Chrome, navigate to [chrome://extensions/](chrome://extensions/) in the address bar.
 3. Switch on "Developer mode".
 4. Click the "Load unpacked" button.
-5. Select the `src` folder which you just downloaded.
+5. Select the `src` folder within the un-zipped folder that you just downloaded.
