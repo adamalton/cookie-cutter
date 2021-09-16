@@ -15,13 +15,17 @@ function copyCurrentTabCookie() {
 			return;
 		}
 		getCookieString(tab.url, function(cookieString) {
-			navigator.clipboard.writeText(cookieString).then(function() {
-				// Success
-				showSuccess();
-			}, function() {
-				// Failure
-				showError("Couldn't copy the cookie to your clipboard.")
-			});
+			if (!cookieString) {
+				showError("Cookie appears to be empty.");
+			} else {
+				navigator.clipboard.writeText(cookieString).then(function() {
+					// Success
+					showSuccess();
+				}, function() {
+					// Failure
+					showError("Couldn't copy the cookie to your clipboard.");
+				});
+			}
 		});
 	});
 }
@@ -44,7 +48,7 @@ function combineCookiesToString(cookies) {
 
 function showError(text) {
 	document.querySelectorAll("[data-status] *").forEach(el => el.classList.add("hidden"));
-	const failureEl = document.querySelector("[data-status] [data-status-failure]")
+	const failureEl = document.querySelector("[data-status] [data-status-failure]");
 	failureEl.innerText = text;
 	failureEl.classList.remove("hidden");
 }
