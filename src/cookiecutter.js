@@ -4,7 +4,7 @@ function init() {
 }
 
 function copyCurrentTabCookie() {
-	chrome.tabs.query({active: true}, function(tabs) {
+	chrome.tabs.query({active: true, lastFocusedWindow: true}, function(tabs) {
 		if (!tabs.length) {
 			showError("Couldn't get the current active tab.")
 			return;
